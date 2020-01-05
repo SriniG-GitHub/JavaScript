@@ -25,3 +25,18 @@ console.log('Value of Number + String : ' + numbString); //105
 //String+Number
 var stringNumb = "1"+2+3+4+5;
 console.log('Value of String + Number : ' + stringNumb); //12345
+
+
+/*
+NOTE1:
+undefined and null are equal in value but different in type:
+typeof undefined           // undefined
+typeof null                // object
+null === undefined         // false
+null == undefined          // true
+
+NOTE2:
+An empty value has nothing to do with undefined.
+An empty string has both a legal value and a type.
+var car = "";    // The value is "", the typeof is "string"
+*/
