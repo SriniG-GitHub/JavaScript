@@ -81,3 +81,56 @@ console.log('Minimum value from the sorted array: ' + (Math.min.apply(null,numbA
 /*
 NOTE: Math.min.apply(null, numbArray) is equivalent to Math.min(45,1,28,5,0,78,55)
 */
+
+//Array.Map() method -> creates a new array by performing a function on each array element. method does not change the original array
+var numbers1 = [1,2,3,4,5];
+var resArray = numbers1.map(myFunc);
+
+function myFunc(value){
+    return value*2;
+}
+console.log('Map method on array returns: ' + (resArray)); //Returns output as [2,4,6,8,10]
+
+
+//Array.Filter() Method -> creates a new array with array elements that satisfies the given condition.
+var numbers2 = [10,20,30,40,50];
+var resArray2 = numbers2.filter(myFunc2);
+
+function myFunc2(value){
+  return value > 25;
+}
+console.log('Filter method on array returns: ' + (resArray2)); //Returns output as [30,40,50]
+
+//Array.Reduce() Method -> method runs a function on each array element to produce (reduce it to) a single value. method works from left-to-right in the array.
+//This method does not reduce the original array.
+
+var numbers3 = [1,2,3,4,5];
+var resArray3 = numbers3.reduce(myFunc3);
+
+function myFunc3(total,value){
+    return total+value;
+}
+console.log('Reduce method on array returns: ' + (resArray3)); //Returns output as [15]
+
+//Reduce example-2
+var numbers4 = [1,2,3,4,5];
+var resArray4 = numbers4.reduce(myFunc3,100);
+
+function myFunc4(total,value){
+    return total+value;
+}
+console.log('Reduce method on array returns: ' + (resArray4)); //Returns output as [115]
+
+//Array.reduceRight Method -> method runs a function on each array element to produce (reduce it to) a single value. method works from right-to-left in the array.
+//This method does not reduce the original array.
+var numbers5 = [1,2,3,4,5];
+var resArray5 = numbers5.reduce(myFunc5);
+
+function myFunc5(total,value){
+    return total+value;
+}
+console.log('Reduce method on array returns: ' + (resArray5)); //Returns output as [15]
+
+
+
+
