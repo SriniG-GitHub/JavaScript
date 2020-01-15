@@ -26,6 +26,17 @@ console.log('Value of Number + String : ' + numbString); //105
 var stringNumb = "1"+2+3+4+5;
 console.log('Value of String + Number : ' + stringNumb); //12345
 
+//Object Type
+var person = {firstName:'John', LastName:'Doe', age: 25};
+console.log('Type of Object is: ' + (typeof person));  //Object
+
+//Array Type
+var array1 = ['HYD','CHN','MH','UP','OR'];
+console.log('Type of arrays is: ' + (typeof array1));  //Object
+
+// Both Arrays and Object retunrs type of Object as above. To avoid confusion. We follow as below:
+console.log('Checking type of Object: ' + Array.isArray(person));   //False. -> Implies not an array
+console.log('Checking type of Arrays: ' + Array.isArray(array1));   //True. -> Implies yes an array
 
 /*
 NOTE1:
