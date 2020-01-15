@@ -124,13 +124,45 @@ console.log('Reduce method on array returns: ' + (resArray4)); //Returns output 
 //Array.reduceRight Method -> method runs a function on each array element to produce (reduce it to) a single value. method works from right-to-left in the array.
 //This method does not reduce the original array.
 var numbers5 = [1,2,3,4,5];
-var resArray5 = numbers5.reduce(myFunc5);
+var resArray5 = numbers5.reduceRight(myFunc5);
 
 function myFunc5(total,value){
     return total+value;
 }
-console.log('Reduce method on array returns: ' + (resArray5)); //Returns output as [15]
+console.log('Reduce Right method on array returns: ' + (resArray5)); //Returns output as [15]
 
+//Array.every() Method -> method check if all array values satisfies the given condition.
+var numbers6 = [1,2,3,4,5];
+var resArray6 = numbers6.every(myFunc6);
 
+function myFunc6(value){
+ return value >3
+}
+console.log('Every method on array returns: ' + (resArray6)); //Returns output as False
 
+//Array.some() Method -> method check if some array values satisfies the given condition.
+var numbers7 = [1,2,3,4,5];
+var resArray7 = numbers7.some(myFunc7);
 
+function myFunc7(value){
+    return value >3
+   }
+console.log('Some method on array returns: ' + (resArray7)); //Returns output as True
+
+//Array.find() Method -> method returns the value of the first array element that satisfies the given condition.
+var numbers8 = [1,2,3,4,5];
+var resArray8 = numbers8.find(myFunc8);
+
+function myFunc8(value){
+ return value > 2;
+}
+console.log('Find method on array returns: ' + (resArray8)); //Returns output as 3 (Value itself in array)
+
+//Array.findIndex Method -> method returns the index of the first array element that satisfies the given condition.
+var numbers9 = [1,2,3,4,5];
+var resArray9 = numbers9.findIndex(myFunc9);
+
+function myFunc9(value){
+  return value>2;
+}
+console.log('Find Index method on array returns: ' + (resArray9)); //Returns output as 2(Index of value 3)
