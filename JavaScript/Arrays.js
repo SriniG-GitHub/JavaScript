@@ -57,3 +57,27 @@ var slicedCar1 = cars.slice(5); //Slicing starts from index 5 to end of the arra
 console.log('Car array output: ' + slicedCar1); // Returns output as [,Porsche,false]
 var slicedCar2 = cars.slice(3,6); //Slicing starts from index 3 to end at index 5 (6-1)
 console.log('Car array output: ' + slicedCar2); // Returns output as [Banana,Buggati,]
+
+//Reverse Array - method reverses the elements in an array.
+console.log('Reversing an array: ' + cars.reverse());  //Returns output as [false,Porsche,,Buggati,Banana,Mango,52.5,VolksWagen]
+
+//Sorting Number Array.
+var numbArray = [45,1,28,5,0,78,55];
+console.log('Number array sorted output: ' + (numbArray.sort())); //Returns output as [0,1,28,45,5,55,78]
+//Issue:=== Look above output. It should be [0,1,5,28,45,55,78]. Sort() method works good in string not in numbers.
+//Solution:=== 
+console.log('Number array sorted output: ' + (numbArray.sort(function(a,b){return a-b}))); //Returns output as [0,1,5,28,45,55,78]
+console.log('Number array sorted descending order: ' + (numbArray.sort(function(a,b){return b-a}))); //Returns output as [78,55,45,28,5,1,0]
+
+//Sorting a whole array is a very inefficient method if you only want to find the highest (or lowest) value. So we can use below method:
+//Math.max.apply to find the highest number in an array || Math.min.apply to find the lowest number in an array
+console.log('Maximum value from the sorted array: ' + (Math.max.apply(numbArray))); //Returns output as -Infinity
+console.log('Maximum value from the sorted array: ' + (Math.max.apply(null,numbArray))); //Returns output as 78
+/*
+NOTE: Math.max.apply(null, numbArray) is equivalent to Math.max(45,1,28,5,0,78,55)
+*/
+console.log('Minimum value from the sorted array: ' + (Math.min.apply(numbArray))); //Returns output as Infinity
+console.log('Minimum value from the sorted array: ' + (Math.min.apply(null,numbArray))); //Returns output as 0
+/*
+NOTE: Math.min.apply(null, numbArray) is equivalent to Math.min(45,1,28,5,0,78,55)
+*/
