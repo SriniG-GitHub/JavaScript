@@ -24,6 +24,9 @@ console.log('Type of Infinity is : ' + (typeof Infinity)); //Number
 //Type of -Infinity value is also Number.
 console.log('Type of -Infinity is : ' + (typeof -Infinity)); //Number
 
+//Type of Undefined value is Un-defined.
+console.log('Type of Undefined is : ' + (typeof undefined)); //Undefined
+
 //Number+String
 var numbString = 1+2+3+4+"5";
 console.log('Value of Number + String : ' + numbString); //105
