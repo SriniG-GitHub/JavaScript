@@ -18,6 +18,12 @@ console.log('Type of NULL is : ' + (typeof nullDemo)); //OBJECT
 //Type of NAN(Not A Number) value is Number.
 console.log('Type of NAN is : ' + (typeof NaN)); //Number
 
+//Type of Infinity value is also Number.
+console.log('Type of Infinity is : ' + (typeof Infinity)); //Number
+
+//Type of -Infinity value is also Number.
+console.log('Type of -Infinity is : ' + (typeof -Infinity)); //Number
+
 //Number+String
 var numbString = 1+2+3+4+"5";
 console.log('Value of Number + String : ' + numbString); //105
