@@ -68,3 +68,25 @@ person["lastName1"] = "Doe";
 person["age1"] = 46;
 var x2 = person1.length;      // person.length will return 0
 var y2 = person1[0];          // person[0] will return undefined
+
+//Different options:
+0 == "";        // true
+1 == "1";       // true
+1 == true;      // true
+
+0 === "";       // false
+1 === "1";      // false
+1 === true;     // false
+
+//Subtracting a string from a string, does not generate an error but returns NaN (Not a Number)
+"Hello" - "Dolly"    // returns NaN
+
+var x5 = 5 + 7;       // x.valueOf() is 12,  typeof x is a number
+var x6 = 5 + "7";     // x.valueOf() is 57,  typeof x is a string
+var x7 = "5" + 7;     // x.valueOf() is 57,  typeof x is a string
+var x8 = 5 - 7;       // x.valueOf() is -2,  typeof x is a number
+var x9 = 5 - "7";     // x.valueOf() is -2,  typeof x is a number
+var x10 = "5" - 7;     // x.valueOf() is -2,  typeof x is a number
+var x11 = 5 - "x";     // x.valueOf() is NaN, typeof x is a number
+
+//In JS: try to Avoid global variables, avoid new(instead use arr =[] and not new array[]), avoid ==(instead use ===), avoid eval()
