@@ -4,11 +4,11 @@ var numb = 12345;
 console.log('Converting number to string format: ' + (numb.toString())); //Ouptut: "12345"
 console.log('Checking format of numb after Converting number to string : ' + typeof(numb.toString()));  //Output: String
 
-// ToExponential Method -> returns a string, with a number rounded and written using exponential notation
+//  ToExponential Method -> returns a string, with a number rounded and written using exponential notation
 console.log('Converting number to Exponential format: ' + (numb.toExponential(5))); //Ouptut: "1.23450e+4"
 
 var money = 99.9;
-// ToFixed Method -> returns a string, with the number written with a specified number of decimals
+//  ToFixed Method -> returns a string, with the number written with a specified number of decimals
 console.log('Converting number to Fixed format: ' + (money.toFixed(5))); //Ouptut: "99.90000"
 
 // ToPrecision Method -> returns a string, with a number written with a specified length
