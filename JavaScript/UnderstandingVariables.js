@@ -5,7 +5,7 @@ var carName;
 
 console.log('Car Name: '+ carName);  //Only Declared. Hence Output is Undefined.
 
-carName = 'BMW';
+carName =   'BMW';
 console.log('Car Name: '+ carName);  //Vaue Assigned. Hence Output is BMW.
 
 //JavaScript never sets a value to null. That must be done programmatically.
