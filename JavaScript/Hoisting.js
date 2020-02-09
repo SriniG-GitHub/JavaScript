@@ -106,7 +106,7 @@ car.owner = "Johnson";
 const car = {type:"Fiat", model:"500", color:"white"};
 car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR
 //----------------------------------------------------------------------------
-//Arrays are also same as above when it comes to Const
+//Arrays are also same as above when it comes to Const   
 //----------------------------------------------------------------------------
 const x10 = 2;       // Allowed
 {
